@@ -1,0 +1,18 @@
+/*
+
+SQL - First 20 Characters in Overview
+
+A table called book is created with the following DDL command:
+
+CREATE TABLE book (id INT, name VARCHAR (30), overview TEXT);
+
+Write the SQL query to select id, name and the first 20 characters of the overview from the table book.
+Note: The id of the books must be sorted in ascending order.
+
+Sollution: Done in SQL
+
+*/
+
+SELECT id, name, SUBSTRING(overview, 1, 20) AS Short_overview
+ FROM book
+ ORDER BY id ASC;
