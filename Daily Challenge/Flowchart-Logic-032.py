@@ -59,6 +59,26 @@ Certainly! Here's a concise text-based flowchart explanation for the updated Pyt
 
 This flowchart explains the logic of the updated Python code for checking if 'n' is divisible by the sum of its digits and printing "YES" or "NO" accordingly, and also prints the sum of the digits.
 
+Sample Test Case 1:
+
+Input:
+9
+
+Output: 
+YES
+
+
+Sample Test Case 2:
+
+Input:
+1234
+
+Output: 
+NO
+
+Sollution: Done in Python
+
+
 """
 
 n=int(input())
