@@ -23,7 +23,7 @@ Enter no of strings required:
 Enter 4 strings using these characters A, B, C, D:
 AABB BBCC CCDD DDAA
 
-Output 1:
+Output 2:
 String with the highest average position value: CCDD
 
 """
