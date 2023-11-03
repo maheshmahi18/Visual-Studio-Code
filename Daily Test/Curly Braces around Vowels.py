@@ -9,7 +9,6 @@ Boundary Condition(s):
 1 <= Length of S <= 100
 
 Input Format:
-
 The first line contains S.
 
 Output Format:
