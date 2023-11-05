@@ -1,0 +1,23 @@
+/*
+
+
+SQL - CREATE with SELECT Filled Buses
+
+A table called bus is created with the following DDL command:
+
+
+CREATE TABLE bus(id INT, totalseats INT, bookedseats INT, number INT);
+
+
+Write the SQL statement to create another table called filledbus with the data populated from the columns id, number and
+totalseats from the table bus where the totalseats is equal to bookedseats.
+
+
+Sollution: Done in SQL
+
+*/
+
+CREATE TABLE filledbus AS
+ SELECT id, number, totalseats
+ FROM bus
+ WHERE totalseats=bookedseats;
