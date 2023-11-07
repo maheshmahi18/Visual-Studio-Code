@@ -1,0 +1,19 @@
+/*
+
+SQL - SELECT Branches with Loans
+
+A table called customer is created with the following DDL command:
+
+CREATE TABLE customer(id INT, accountnum INT,name VARCHAR (20), loanamount INT, branchname VARCHAR (30);
+
+Write the SQL query to select the branchname and its sum of Ioanamount from the table customer.
+Note: The total loanamount of the branches must be sorted in descending order.
+
+Solution: Done in SQL
+
+*/
+
+SELECT branchname, SUM(loanamount) AS totalloanamount
+ FROM customer
+ GROUP BY branchname
+ ORDER BY totalloanamount desc;
