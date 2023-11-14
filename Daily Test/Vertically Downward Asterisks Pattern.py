@@ -49,3 +49,16 @@ Solution: Done in Python
 
 
 """
+
+n=list(map(int,input().split()))
+a=[]
+for i in range(len(n)):
+    b=""
+    for j in range(1,max(n)+1):
+        if(n[i]>=j): b+='*'
+        else: b+='-'
+    a.append(b)
+for i in range(max(n)):
+    for j in range(len(n)):
+        print(a[j][i],end="")
+    print()
