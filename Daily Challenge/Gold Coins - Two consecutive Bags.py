@@ -45,3 +45,7 @@ Max Execution Time Limit: 1000 millisecs
 Sollution: Done in Python
 
 """
+
+n=list(map(int,input().split()))
+b=[n[i]+n[i+1] for i in range(len(n)-1)]
+print(max(b))
