@@ -42,4 +42,6 @@ Output:
 Max Execution Time Limit: 1000 millisecs
 
 
+Sollution: Done in Python
+
 """
