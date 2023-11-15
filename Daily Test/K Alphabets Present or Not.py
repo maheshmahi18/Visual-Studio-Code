@@ -48,3 +48,10 @@ Solution: Done in Python
 
 
 """
+
+s=input().strip()
+k=int(input())
+a="abcdefghijklmnopqrstuvwxyz"
+b=[i for i in range(k) if a[i] in s]
+if(len(b)==k): print("YES")
+else: print("NO")
