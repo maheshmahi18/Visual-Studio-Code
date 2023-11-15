@@ -47,3 +47,8 @@ Solution: Done in Python
 
 
 """
+x,y,z=map(int,input().split())
+a=z
+while(a>=x and a<=y):
+    a+=z
+print(a)
