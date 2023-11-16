@@ -56,5 +56,25 @@ Max Execution Time Limit: 1000 millisecs
 
 Solution: Done in Python
 
-s
+
 """
+
+
+
+a,b=map(int,input().split())
+c=[]
+if(b==0):
+  for i in range(1,a+1):
+   c.append(i)
+elif(b>0):
+  for i in range(1,b+1):
+    c.append(i);c.append(i)
+  for i in range(b+1,a+1):
+    c.append(i)
+elif(b<0):
+    for i in range(a,a+b,-1):
+      c.append(i);c.append(i)
+    for i in range(a+b,0,-1):
+      c.append(i)
+c.sort()
+print(*c)
