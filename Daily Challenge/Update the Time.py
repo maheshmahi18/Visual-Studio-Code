@@ -48,3 +48,11 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+from datetime import datetime, timedelta
+
+s=input().strip()
+n=int(input())
+a=datetime.strptime(s,"%H:%M")
+b=a+timedelta(minutes=n)
+print(b.strftime("%H:%M"))
