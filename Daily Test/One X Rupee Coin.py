@@ -43,4 +43,16 @@ NO
 
 
 Max Execution Time Limit: 500 millisecs
+
+Solution: Done in Python
+
+
 """
+
+
+x,a,y,b=map(int,input().split())
+t=(x*y)+a
+if(t>=b and (b%y)<=a):
+    print("YES")
+else:
+    print("NO")
