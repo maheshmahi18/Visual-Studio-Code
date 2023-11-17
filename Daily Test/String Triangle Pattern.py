@@ -50,3 +50,16 @@ Solution: Done in Python
 
 
 """
+
+s=input()
+c=1
+for i in range(1,len(s)+1):
+    a=s[:i]
+    if(c%2!=0):
+        print(a,end="");c+=1
+        b=['*' for j in range(i,len(s))]
+        print("".join(b))
+    else:
+        print(a[::-1],end="");c+=1
+        b=['*' for i in range(i,len(s))]
+        print("".join(b))
