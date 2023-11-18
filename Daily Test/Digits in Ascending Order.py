@@ -40,3 +40,8 @@ NO
 Max Execution Time Limit: 500 millisecs
 
 """
+
+s=input()
+a=[i for i in range(len(s)-1) if(s[i+1]>s[i])]
+if(len(a)+1==len(s)): print("YES")
+else: print("NO")
