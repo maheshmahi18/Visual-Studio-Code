@@ -44,3 +44,7 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+n=int(input())
+a="abcd"
+b=a*n
+print(b[:n])
