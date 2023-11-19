@@ -46,3 +46,10 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+s=input()
+a=[i for i in range(len(s)+1) if(i%3==0)]
+b=0
+for i in range(len(a)-1):
+    b+=int(s[a[i]:a[i+1]])
+print(b)
