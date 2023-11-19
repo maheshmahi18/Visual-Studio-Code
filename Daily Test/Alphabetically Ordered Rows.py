@@ -53,3 +53,15 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+def check(a):
+  b=[ord(i) for i in a]
+  c=sorted(b)
+  if(b==c):  return 1;
+
+a,b=map(int,input().split())
+d=0
+for i in range(a):
+  c=list(map(str,input().split()))
+  if(check(c)==1): d+=1
+print(d)
