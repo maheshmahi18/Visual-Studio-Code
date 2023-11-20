@@ -80,3 +80,20 @@ Output:
 Solution: Done in Python
 
 """
+
+n=int(input())
+a=[]
+for i in range(n):
+  a.append(list(map(str,input().split())))
+if(n%2==0):
+  for i in range(n):
+    for j in range(n):
+      if((i==n//2 and j==n//2) or (i==n//2 and j==n//2-1) or (i==n//2-1 and j==n//2) or (i==n//2-1 and j==n//2-1) or i==0 or i==n-1 or j==0 or j==n-1): print("*",end=" ")
+      else: print(a[i][j],end=" ")
+    print()
+else:
+  for i in range(n):
+    for j in range(n):
+      if((i==n//2 and j==n//2) or i==0 or i==n-1 or j==0 or j==n-1): print("*",end=" ")
+      else: print(a[i][j],end=" ")
+    print()
