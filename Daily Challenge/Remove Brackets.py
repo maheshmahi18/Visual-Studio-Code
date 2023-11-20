@@ -42,3 +42,7 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+s=input()
+a=[i for i in s if i.isalpha()]
+print("".join(a))
