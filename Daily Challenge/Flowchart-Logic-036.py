@@ -18,5 +18,7 @@ Note: The symbol ^ refers the Bitwise XOR operator.
 12. Return the value of onesCount
 
 Max Execution Time Limit: 1000 millisecs
-"""
 
+Solution: Done in Python
+
+"""
