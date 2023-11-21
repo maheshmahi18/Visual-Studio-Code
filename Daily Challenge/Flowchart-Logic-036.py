@@ -22,3 +22,14 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+def getBin(n):
+  c=0
+  while(n>0):
+    c+=n%2
+    n//=2
+  print(c)
+
+m,n=map(int,input().split())
+getBin(m^n)
+
