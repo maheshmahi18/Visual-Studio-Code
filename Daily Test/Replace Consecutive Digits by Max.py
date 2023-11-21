@@ -46,3 +46,15 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+s=input()
+a="";b=[]
+for i in s:
+  if i.isalpha():
+    if(len(b)>1):
+      a+=str(max(b));b=[]
+    a+=i
+  else:
+    b.append(int(i))
+if(len(b)>0): a+=str(max(b));print(a)
+else: print(a)
