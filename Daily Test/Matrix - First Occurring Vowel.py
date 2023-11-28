@@ -52,3 +52,12 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+a,b=map(int,input().split())
+c=[];d=""
+for i in range(a):
+    c.append(list(map(str,input().split())))
+for i in range(b):
+    for j in range(a):
+        if c[j][i] in "aeiouAEIOU": d+=c[j][i];break
+print(d)
