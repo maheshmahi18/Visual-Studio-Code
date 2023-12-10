@@ -48,3 +48,12 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+n = int(input())
+a = list(map(int, input().split()))
+b={}
+for i in a:
+  c=i%10
+  if c in b:  b[c]+=i
+  else: b[c]=i
+print(max(b.values()))
