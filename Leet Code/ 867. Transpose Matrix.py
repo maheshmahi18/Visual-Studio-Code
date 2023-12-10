@@ -31,3 +31,18 @@ n == matrix[i].length
 Solution: Done in Python
 
 """
+
+class Solution(object):
+  def transpose(self,matrix):
+    a=[]
+    for i in range(len(matrix[0])):
+      b=[]
+      for j in range(len(matrix)):
+        b.append(matrix[j][i])
+      a.append(b)
+    return a
+    
+
+sol = Solution()
+example_matrix = eval(input())
+print(sol.transpose(example_matrix))
