@@ -41,3 +41,6 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+a,b=map(int,input().split())
+print("%.2f"%((b/2)-a))
