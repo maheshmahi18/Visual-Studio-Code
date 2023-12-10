@@ -1,6 +1,5 @@
 """
 
-
 867. Transpose Matrix
 
 
@@ -28,5 +27,7 @@ n == matrix[i].length
 1 <= m * n <= 105
 -10^9 <= matrix[i][j] <= 10^9
 
+
+Solution: Done in Python
 
 """
