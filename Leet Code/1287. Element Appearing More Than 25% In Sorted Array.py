@@ -29,3 +29,14 @@ Constraints:
 Solution: Done in Python
 
 """
+
+class Solution(object):
+    def findSpecialInteger(self, arr):
+        a=set(arr)
+        b=[arr.count(i) for i in a]
+        c=list(a)
+        return c[b.index(max(b))]
+    
+sol = Solution()
+a = eval(input())
+print(sol.findSpecialInteger(a))
