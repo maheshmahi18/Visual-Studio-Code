@@ -50,4 +50,7 @@ Output:
 
 Max Execution Time Limit: 500 millisecs
 
+
+Solution: Done in Python
+
 """
