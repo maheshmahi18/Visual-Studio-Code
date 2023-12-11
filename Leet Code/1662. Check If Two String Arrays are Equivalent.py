@@ -46,4 +46,7 @@ Constraints:
 1 <= sum(word1[i].length), sum(word2[i].length) <= 103
 word1[i] and word2[i] consist of lowercase letters.
 
+
+Solution: Done in Python
+
 """
