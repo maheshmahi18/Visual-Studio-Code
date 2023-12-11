@@ -53,3 +53,8 @@ Max Execution Time Limit: 1000 millisecs
 Solution: Done in Python
 
 """
+
+a,b=map(str,input().split())
+c=list(map(str,input().split()))
+d=[int(i) for i in c if i[-len(b):]==b]
+print(sum(d))
