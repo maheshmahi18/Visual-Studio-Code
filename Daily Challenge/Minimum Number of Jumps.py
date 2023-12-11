@@ -54,3 +54,12 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+a,b=map(int,input().split())
+c=abs(a-b);d=0
+while c>0:
+    if c>=5: c-=5
+    elif c>=2: c-=2
+    elif c>=1: c-=1
+    d+=1
+print(d)
