@@ -36,4 +36,6 @@ Constraints:
 
 1 <= n <= 1000
 
+
+Solution: Done in Python
 """
