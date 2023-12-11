@@ -50,3 +50,20 @@ word1[i] and word2[i] consist of lowercase letters.
 Solution: Done in Python
 
 """
+
+class Solution(object):
+    def arrayStringsAreEqual(self, word1, word2):
+        """
+        :type word1: List[str]
+        :type word2: List[str]
+        :rtype: bool
+        """
+        a="".join(word1)
+        b="".join(word2)
+        if a==b: return True
+        else: False
+
+sol=Solution()
+word1=eval(input())
+word2=eval(input())
+print(sol.arrayStringsAreEqual(word1,word2))
