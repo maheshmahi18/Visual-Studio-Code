@@ -39,3 +39,14 @@ num only consists of digits and does not contain any leading zeros.
 Solution: Done in Python
 
 """
+
+class Solution(object):
+    def largestOddNumber(self, num):
+        a="13579"
+        for i in range(len(num)-1,-1,-1):
+            if num[i] in a:
+                return num[:i+1]
+        return ''
+sol=Solution()
+n=input()
+print(sol.largestOddNumber(n))
