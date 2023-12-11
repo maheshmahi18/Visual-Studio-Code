@@ -38,4 +38,24 @@ Constraints:
 
 
 Solution: Done in Python
+
 """
+
+class Solution(object):
+  def totalMoney(self, n):
+    a=n//7
+    b=1;c=0;d=n-(a*7)
+    if n>7:
+      while(a>0):
+        for i in range(b,b+7):
+          c+=i
+        a-=1;b+=1
+      for i in range(b,b+d):
+        c+=i
+      return c
+    else:
+        return sum([i for i in range(b,d+1)])
+        
+sol=Solution()
+n=int(input())
+print(sol.totalMoney(n))
