@@ -45,3 +45,22 @@ Constraints:
 Solution: Done in Python
 
 """
+
+class Solution(object):
+    def numberOfMatches(self, n):
+        a=0;b=0;c=n;d=0
+        if(n==1):
+            return 0
+        else:
+            while(a!=1 and b!=1):
+                if(c%2==0):
+                    b,a=c//2, c//2
+                    c-=a;d+=a
+                else:
+                    b,a=(c-1)//2, (c-1)//2+1
+                    c-=a;d+=a
+            return d
+        
+sol=Solution()
+n=int(input())
+print(sol.numberOfMatches(n))
