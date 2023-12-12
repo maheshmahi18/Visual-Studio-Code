@@ -52,3 +52,8 @@ Solution: Done in Python
 
 
 """
+
+n=int(input())
+a=list(map(int,input().split()))
+b=[i*2 if i%2==0 else i*4 for i in a]
+print(sum(b))
