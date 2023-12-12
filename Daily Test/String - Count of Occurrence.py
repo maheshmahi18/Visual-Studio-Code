@@ -51,3 +51,10 @@ Max Execution Time Limit: 500 millisecs
 Solution: Done in Python
 
 """
+
+s=input()
+a={}
+for i in s:
+    a[i]=a.get(i,0)+1
+b=sorted(a.items(), key=lambda x: (-x[1],x[0]))
+print("".join([i[0] for i in b]))
