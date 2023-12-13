@@ -12,5 +12,11 @@ Note: The role of the users must be sorted in alphabetical order and the id of t
 Max Execution Time Limit: 500 millisecs
 
 
+Solution: Done in SQL
+
+
 */
 
+SELECT id, name, role
+FROM user
+ORDER BY role ASC, id DESC;
