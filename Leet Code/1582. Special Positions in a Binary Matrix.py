@@ -27,4 +27,27 @@ n == mat[i].length
 1 <= m, n <= 100
 mat[i][j] is either 0 or 1.
 
+
+Solution: Done in Python
+
 """
+
+class Solution(object):
+    def numSpecial(self, mat):
+        c = 0
+        for i in range(len(mat)):
+            for j in range(len(mat[0])):
+                if mat[i][j] == 1:
+                     if self.check(mat, i, j)==(1,1): c+=1
+        return c
+
+    def check(self, mat, i, j):
+        a = mat[i]
+        b = [mat[k][j] for k in range(len(mat))]
+        c=a.count(1)
+        d=b.count(1)
+        return c,d
+    
+s=Solution()
+n=eval(input())
+print(s.numSpecial(n))
