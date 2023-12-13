@@ -36,4 +36,15 @@ Output:
 
 Max Execution Time Limit: 1000 millisecs
 
+
+Solution: Done in Python
+
 """
+
+s=input().strip()
+for i in  range(len(s)):
+    a=int(s[i])
+    b=[s[j] for j in range(len(s)) if i!=j and s[j]!='0']
+    res="".join(b)
+    if a!=0:
+        print((res+' ')*a)
