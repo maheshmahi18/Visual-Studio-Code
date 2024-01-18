@@ -1,0 +1,75 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Greeting Transition</title>
+  <style>
+    body {
+      background-color: black;
+      color: white;
+      margin: 0;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      height: 100vh;
+      transition: background-color 1s ease-in-out, transform 5s ease-in-out; /* Added transform transition */
+    }
+
+    #greeting {
+      font-size: 36px;
+      font-weight: bold;
+      text-align: center;
+      opacity: 1;
+      transition: opacity 5s ease-in-out, transform 5s ease-in-out;
+      transform: translateY(0);
+    }
+  </style>
+</head>
+<body>
+  <p id="greeting">Hello!</p>
+
+  <script>
+    var isAnimating = true; // Flag to control animation
+    var body = document.body; // Define body variable
+
+    setTimeout(function() {
+      var greetings = ['Hello!', 'नमस्ते!', 'आदाब!', 'నమస్కారం!', 'வணக்கம்!', 'ನಮಸ್ಕಾರ!'];
+
+      var index = 0;
+      var greetingElement = document.getElementById('greeting');
+
+      function changeGreeting() {
+        greetingElement.textContent = greetings[index];
+        index++;
+
+        if (index >= greetings.length) {
+          isAnimating = false; // Set flag to stop greeting animation
+          body.style.backgroundColor = 'white'; // Start background transition
+          body.style.transform = 'translateY(-100%)'; // Slide up
+          setTimeout(function() {
+            greetingElement.style.display = 'none'; // Hide greeting element
+          }, 5000); // Wait for transition to end
+        }
+      }
+
+      var intervalId = setInterval(function() {
+        greetingElement.style.opacity = 0;
+        setTimeout(function() {
+          changeGreeting();
+          greetingElement.style.opacity = 1;
+        }, 1);
+      }, 280);
+
+      // Clear interval when greeting animation is stopped
+      setTimeout(function() {
+        if (!isAnimating) {
+          clearInterval(intervalId);
+        }
+      }, 1000);
+    }, 1);
+  </script>
+</body>
+</html>
+

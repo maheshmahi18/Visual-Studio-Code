@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+<style> 
+div {
+  width: 100px;
+  height: 50px;
+  background-color: ;
+  font-weight: bold;
+  position: relative;
+  animation: mymove 9s;
+  animation-fill-mode: forwards;
+}
+
+#div1 {animation-timing-function: linear;}
+#div2 {animation-timing-function: ease;}
+#div3 {animation-timing-function: ease-in;}
+#div4 {animation-timing-function: ease-out;}
+#div5 {animation-timing-function: ease-in-out;}
+
+@keyframes mymove {
+  from {left: 0px;}
+  to {left: 300px;}
+}
+</style>
+</head>
+<body>
+
+<h1>CSS Animation</h1>
+
+<p></p>
+<div id="div1">Hello!</div>
+<div id="div2">नमस्ते!</div>
+<div id="div3">నమస్కారం!</div>
+<div id="div4">வணக்கம்!</div>
+<div id="div5">ನಮಸ್ಕಾರ</div>
+
+</body>
+</html>
+
+
