@@ -1,0 +1,24 @@
+<?xml version='1.0' encoding='UTF-8' ?>
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml" lang="en" xml:lang="en"><head id="j_idt21"><!-- Global site tag (gtag.js) - Google Analytics -->
+<script async="async" src="https://www.googletagmanager.com/gtag/js?id=UA-61753334-1"></script>
+<script>
+  //<![CDATA[
+  window.dataLayer = window.dataLayer || [];
+  function gtag(){dataLayer.push(arguments);}
+  gtag('js', new Date()); gtag('config', 'UA-61753334-1');
+
+  window.addEventListener("load", enableAnalyticsEventCapture, false);
+
+  function enableAnalyticsEventCapture() {
+    // Download button
+    $(document).on("click", ".btn-download, .btn-download.dropdown-toggle + ul.dropdown-menu li a", function() {
+      var category = stripSize($(this).text());
+      var label = getFileId($(this));
+      gtag('event', 'Download',{'event_category' : category,
+                                'event_label' : label});
+    });
+
+    // Request Access button
+    $(document).on("click", ".btn-request", function() {
+      va
